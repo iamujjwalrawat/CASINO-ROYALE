@@ -1,1 +1,1 @@
-_A Casino game created using C++ Language._
+_A Casino Game program created using C++ Language._
