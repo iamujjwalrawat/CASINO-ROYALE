@@ -1,26 +1,35 @@
 #include <iostream>
-#include <string>
 #include <cstdlib>
-#include <time.h>
+#include <ctime>
 using namespace std;
+
 void terms();
-int main()
-{
+void playGame(string Player, int &balance);
+
+int main() {
     string Player;
-    int balance; // stores player's balance
-    int bettingAmount;
-    int guess, My_rand;
-    int craps; // stores the random number;just like dice
-    char choose;
-    srand(time_t(0));//seed random number; I used it for unique id for casino player.
-    My_rand = rand();
-    cout <<rand() << "-Unique Customer ID ";//if any problem occurs use this unique id for assistance.
-    cout << "\n\t\t  ========WELCOME TO CASINO WORLD======= ";
-    cout << "\n\nType your Name : ";
+    int balance;
+    srand(static_cast<unsigned>(time(0)));
+
+    cout << "===== WELCOME TO CASINO WORLD =====\n";
+    cout << "Enter your name: ";
     getline(cin, Player);
-    cout<< "\t Disclaimer: Gambling may not be safe for person. It leads to addiction. Be Smart and Aware. We take no resposibility.";
-    cout << "\n\nEnter the starting balance to play game : $";
+    terms();
+    cout << "Enter the starting balance to play the game: $";
     cin >> balance;
+    cin.ignore(); // Clear the newline character from the input buffer
+    playGame(Player, balance);
+
+    return 0;
+}
+
+void terms() {
+    cout << "Disclaimer: Gambling may not be safe for individuals and can lead to addiction. Be smart and aware. We take no responsibility.\n";
+}
+
+void playGame(string Player, int &balance) {
+    // Your game logic here
+}
     do
     {
         terms();
