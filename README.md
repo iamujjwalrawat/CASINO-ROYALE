@@ -4,7 +4,7 @@
   <img src="casino_royale_logo.png" alt="CASINO-ROYALE Logo" width="200">
 </p>
 
-Welcome to **CASINO-ROYALE**, a simple and fun C++ casino game where you can try your luck and test your gambling skills. Play various classic casino games and enjoy the thrill of winning or losing it all!
+Welcome to **CASINO-ROYALE**, A simple and fun C++ casino game where you can try your luck and test your gambling skills. Play various classic casino games and enjoy the thrill of winning or losing it all!
 
 ## Features
 
